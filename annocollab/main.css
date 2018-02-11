@@ -1,0 +1,78 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.annotationBox {
+	flex-flow:column wrap;
+	flex-shrink: 50%;
+	flex-grow: 100%;
+	align-items: center;
+	border: 3px solid #9b4dca;
+	border-radius : 10px;
+	display: flex;
+	padding: 20px 20px 0 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+fieldset {
+	display: flex;
+	flex: 1;
+	flex-flow: column wrap;
+}
+
+.annotationBox > * {
+	flex: 1;
+}
+
+.titleSentence {
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin-bottom: .5rem;
+}
+
+.textToAnno {
+	margin-bottom: 20px;
+}
+
+select #reasonField {
+	/*size gotta be reduced*/
+}
+
+.sides {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+input[value="Soumettre"]{
+	margin-top: 30px;
+	align-self: center;
+	display:none;
+}
+
+.dropDown {
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	display:none;
+}
+
+.dropDown > * {
+	flex : 1;
+}
+
+.centerBtn {
+	display:flex;
+	flex: 1;
+	justify-content: space-around;
+}
+
+.nextButton {
+	display: none;
+}
