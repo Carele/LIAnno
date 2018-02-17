@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="milligram.css">
     <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <script src="displayStuff.js"></script> 
+
   </head>
   <body>
     <div class="mainContainer">
@@ -13,12 +16,12 @@
           <input placeholder="CJ Patoilo" id="nameField" type="text"-->
           
           <div class="titleSentence">Ce discours est-il sexiste ?</div>
-          <div class="textToAnno">Placeholder text for very sexist comment. Or not.</div>
+          <div id="textToAnno">Prêt ?</div>
           <div class="centerBtn">
-            <a class="button" href="javascript: void(0)">Sexiste</a>
-            <a class="button" href="javascript: void(0)">Pas sexiste</a>
+            <a class="button" id="sexist" href="javascript: void(0)">Sexiste</a>
+            <a class="button" id="notSexist" href="javascript: void(0)">Pas sexiste</a>
           </div>
-          <div class="dropDown">
+          <div class="dropDown hidden" id="hiddenDrop">
             <label for="reasonField">Type de sexisme</label>
             <select id="reasonField">
               <option value="1">1</option>
@@ -33,7 +36,7 @@
           </div-->
           <div class="sides">
             <a class="button button-outline" href="javascript: void(0)">Abandonner</a>
-            <a class="button nextButton" href="javascript: void(0)">Suivant</a>
+            <a class="button notActive" id="nextButton" href="#">Suivant</a>
           </div>
           <input class="button" value="Soumettre" type="submit">
         </fieldset>

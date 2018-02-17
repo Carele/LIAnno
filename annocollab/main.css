@@ -10,7 +10,7 @@
 	flex-shrink: 50%;
 	flex-grow: 100%;
 	align-items: center;
-	border: 3px solid #9b4dca;
+	border: 3px solid #4CAF50;
 	border-radius : 10px;
 	display: flex;
 	padding: 20px 20px 0 20px;
@@ -29,13 +29,17 @@ fieldset {
 }
 
 .titleSentence {
-	display: block;
+	display: flex;
+	justify-content: center;
 	font-size: 1.6rem;
 	font-weight: 700;
 	margin-bottom: .5rem;
 }
 
-.textToAnno {
+#textToAnno {
+	display: flex;
+	min-width: 400px;
+	justify-content: center;
 	margin-bottom: 20px;
 }
 
@@ -60,11 +64,14 @@ input[value="Soumettre"]{
 	display: flex;
 	flex: 1;
 	justify-content: space-around;
-	display:none;
 }
 
 .dropDown > * {
 	flex : 1;
+}
+
+.hidden {
+	display: none;
 }
 
 .centerBtn {
@@ -75,4 +82,10 @@ input[value="Soumettre"]{
 
 .nextButton {
 	display: none;
+}
+
+.notActive {
+  pointer-events: none;
+  cursor: default;
+  background-color: #80e27e;
 }
