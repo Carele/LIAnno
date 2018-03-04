@@ -9,6 +9,7 @@
 	flex-flow:column wrap;
 	flex-shrink: 50%;
 	flex-grow: 100%;
+	max-width: 800px;
 	align-items: center;
 	border: 3px solid #4CAF50;
 	border-radius : 10px;
@@ -38,7 +39,7 @@ fieldset {
 
 #textToAnno {
 	display: flex;
-	min-width: 400px;
+	min-width: 200px;
 	justify-content: center;
 	margin-bottom: 20px;
 }
@@ -88,4 +89,76 @@ input[value="Soumettre"]{
   pointer-events: none;
   cursor: default;
   background-color: #80e27e;
+}
+
+
+
+/* For Pictures */
+
+.container {
+  max-width: 960px;
+  margin: 30 auto;
+}
+
+.photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  padding: 0;
+  max-width: 800px;
+}
+
+.photos img {
+  display: block;
+  float: left;
+  flex: 0 0 auto;
+  margin: 10 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .photos img {
+    width: calc(90%/4);
+    height: calc(100%/4);
+  }
+
+  #textToAnno {
+	display: flex;
+	min-width: 400px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .photos img {
+    width: calc(90%/4);
+    height: calc(100%/4);
+  }
+
+  #textToAnno {
+	display: flex;
+	min-width: 300px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .photos img {
+    width: calc(90%/3);
+    height: calc(100%/3);
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .photos img {
+    width: calc(90%/2);
+    height: calc(100%/2);
+  }
+}
+
+@media screen  and (max-width: 320px) {
+  .photos img {
+    width: calc(90%/2);
+    height: calc(100%/2);
+  }
 }

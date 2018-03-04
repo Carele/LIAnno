@@ -1,7 +1,7 @@
 // Wait for the page to load first
 window.onload = function() {
 
-  var i = 0;
+  var i = 1;
 
   var drop = document.getElementById("hiddenDrop")
   var nextBtn = document.getElementById("nextButton");
@@ -28,7 +28,7 @@ window.onload = function() {
     sexistBtn.style.backgroundColor = "#087f23";
     notSexistBtn.style.backgroundColor = "#4CAF50";
     nextBtn.classList.remove("notActive");
-    drop.classList.remove("hidden");
+    //drop.classList.remove("hidden");
     return false;
   }
 
@@ -36,6 +36,7 @@ window.onload = function() {
     notSexistBtn.style.backgroundColor = "#087f23";
     sexistBtn.style.backgroundColor = "#4CAF50";
     nextBtn.classList.remove("notActive");
+    drop.classList.add("hidden");
     return false;
   }
 }
