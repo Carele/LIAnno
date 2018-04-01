@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <script src="displayStuff.js"></script> 
+    <script src="select.js"></script> 
 
   </head>
   <body>
@@ -13,11 +14,17 @@
       <form class="annotationBox">
         <fieldset>
           
-          <div class="titleSentence">Bienvenu sur ce questionnaire !</div>
-          <div id="textToAnno">Il s'agit d'un questionnaire purement anonyme, qui nous permettra d'étudier la manière dont le sexisme est perçu dans la société. Nous allons proposer des discours, et nous vous demandons de nous indiquer si vous pensez qu'ils sont sexistes ou non. Prêts ?</div>
+          <div class="titleSentence">Bienvenue !</div>
+          <div id="textToAnnoB" style="text-align: left">
+          <p>Nous sommes des étudiant•e•s en Master 2 Linguistique Informatique et dans le cadre d’un projet nous cherchons a étudier les différentes perceptions du sexisme selon le genre des annotateurs.</p>
+          <p>
+          Nous allons vous proposer environ 60 énoncés de types variés, et nous vous demandons d’indiquer s’il s’agit d’énoncés sexistes ou non. Vous devrez donner une réponse tranchée mais vous pourrez préciser pourquoi vous hésitez si c’est le cas.</p>
+          </div>
+          <label for="nameField">Nous aimerions connaître votre genre (le questionnaire est anonyme) :</label>
+          <input placeholder="Merci de renseigner votre genre ici." id="nameField" type="text">
           <div class="sides">
-            <a class="button button-outline" href="javascript: void(0)">Abandonner</a>
-            <a class="button" id="goToGender" href="gender.html">C'est parti !</a>
+            <a class="button" id="goToAnnotate" style="visibility:hidden" href="annotate.html">Commencer!</a>
+            <a class="button" id="goToAnnotate" href="annotate.html">Commencer!</a>
           </div>
           <input class="button" value="Soumettre" type="submit">
         </fieldset>

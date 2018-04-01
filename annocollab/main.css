@@ -32,16 +32,21 @@ fieldset {
 .titleSentence {
 	display: flex;
 	justify-content: center;
-	font-size: 1.6rem;
+	font-size: 2rem;
 	font-weight: 700;
-	margin-bottom: .5rem;
+	margin-bottom: 2rem;
 }
 
-#textToAnno {
+#textToAnno, #textToAnnoB {
 	display: flex;
 	min-width: 200px;
 	justify-content: center;
 	margin-bottom: 20px;
+	text-align: center;
+}
+
+#textToAnnoB {
+	flex-flow: column;
 }
 
 select #reasonField {
@@ -91,7 +96,17 @@ input[value="Soumettre"]{
   background-color: #80e27e;
 }
 
+.motin{
+	color: black;
+    background: #80e27e;
+    margin: 0 .2rem;
+    padding: 0 .2rem;
 
+}
+.motout{
+    color: black;
+    background: white;
+}
 
 /* For Pictures */
 
@@ -126,7 +141,8 @@ input[value="Soumettre"]{
 
   #textToAnno {
 	display: flex;
-	min-width: 400px;
+	min-width: 600px;
+	max-width: 600px;
 	}
 }
 
@@ -138,7 +154,8 @@ input[value="Soumettre"]{
 
   #textToAnno {
 	display: flex;
-	min-width: 300px;
+	min-width: 600px;
+	max-width: 600px;
 	}
 }
 
